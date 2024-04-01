@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgrey;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: rgb(231, 3, 3);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(231, 3, 3);
+        }
+
+        
+        .especial::before {
+            content: '⇒';
+        }
+        .especial::after {
+            content: '⇐';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/heloalbqq_/" target="_blank">Meu Instagram</a></li>
+        <li><a href="https://www.coca-cola.com.br/" target="_blank" class="especial">Site da Coca-Cola</a></li>
+        <li><a href="https://www.ufpe.br/" target="_blank">Site da UFPE</a></li>
+    </ul>
+</body>
+</html>
