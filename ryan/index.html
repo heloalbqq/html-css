@@ -1,79 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Painel de Controle</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="menu">
-                <span>Viscel</span>
-                <span>Cadastros</span>
-                <span>Pagamentos</span>
-                <span>Top10</span>
-                <span>Ped. Oração</span>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
             </div>
-            <div class="profile">
+            <div class="title">
+                <h1>Viscel</h1>
                 <span>Minha Igreja - IEQ - IeqCastanhal Sede</span>
-                <span>Config</span>
+            </div>
+            <div class="user-icon">
+                <img src="user-icon.png" alt="User Icon">
             </div>
         </div>
-        <div class="main">
-            <div class="sidebar">
-                <button class="btn red">Células</button>
-                <button class="btn orange">Ped. Oração</button>
-                <button class="btn blue">Meus dados</button>
-                <button class="btn green">Usuários</button>
-                <button class="btn teal">Config</button>
-                <button class="btn">Agenda</button>
+        <nav>
+            <ul>
+                <li><a href="#">Cadastros</a></li>
+                <li><a href="#">Pagamentos</a></li>
+                <li><a href="#">Top10</a></li>
+                <li><a href="#">Ped. Oração</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="buttons">
+            <button class="btn red">Células</button>
+            <button class="btn orange">Ped. Oração</button>
+            <button class="btn blue">Meus dados</button>
+            <button class="btn green">Usuários</button>
+            <button class="btn cyan">Config</button>
+            <button class="btn gray">Agenda</button>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Membros/Usuários (Ativos)</h2>
+                <ul>
+                    <li>Administradores: <span>2</span></li>
+                    <li>Líderes: <span>14</span></li>
+                    <li>Supervisores: <span>10</span></li>
+                    <li>Coordenadores: <span>4</span></li>
+                </ul>
             </div>
-            <div class="content">
-                <div class="box">
-                    <h3>Membros/Usuários (Ativos)</h3>
-                    <p>Administradores: 2</p>
-                    <p>Líderes: 14</p>
-                    <p>Supervisores: 10</p>
-                    <p>Coordenadores: 3</p>
-                </div>
-                <div class="box">
-                    <h3>Doações (Mês atual)</h3>
-                    <p>Doações realizadas: R$ 0,00</p>
-                    <p>Doações aguardando pagamento: R$ 0,00</p>
-                </div>
-                <div class="box">
-                    <h3>Reuniões de Célula</h3>
-                    <p>Jan à Dez de 2015</p>
-                    <p>Visitantes não convertidos:</p>
-                    <p>Conversões realizadas:</p>
-                    <p>Reconciliações realizadas:</p>
-                    <p>Batismos realizados:</p>
-                    <p>Ofertas com propósito:</p>
-                    <p>Trab. de Evangelização:</p>
-                    <p>Ação Social:</p>
-                    <p>Visita de Supervisão:</p>
-                </div>
-                <div class="box">
-                    <h3>Cadastros (Ativos)</h3>
-                    <p>Usuários: 18</p>
-                    <p>Células: 14</p>
-                    <p>Vídeos: 7</p>
-                </div>
-                <div class="box">
-                    <h3>Células ativas por Rede</h3>
-                    <p>Homens: 1</p>
-                    <p>Rapazes: 4</p>
-                    <p>Moças: 9</p>
-                </div>
-                <div class="box">
-                    <h3>Agenda do mês (Jun/2015)</h3>
-                    <p>Evento: </p>
-                    <p>Data do evento: </p>
-                </div>
+            <div class="section">
+                <h2>Doações (Mês atual)</h2>
+                <p>Doações realizadas: <span>R$ 0,00</span></p>
+                <p>Doações aguardando pagamento: <span>R$ 0,00</span></p>
+            </div>
+            <div class="section">
+                <h2>Reuniões de Célula</h2>
+                <p>Jan à Dez de 2015</p>
+                <ul>
+                    <li>Visitantes não convertidos: <span>5</span></li>
+                    <li>Conversões realizadas: <span>10</span></li>
+                    <li>Reconciliações realizadas: <span>3</span></li>
+                    <li>Batismos realizados: <span>2</span></li>
+                    <li>Ofertas com propósito: <span>R$ 500,00</span></li>
+                    <li>Trab. de Evangelização: <span>4</span></li>
+                    <li>Ação Social: <span>3</span></li>
+                    <li>Visita de Supervisão: <span>2</span></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Cadastros (Ativos)</h2>
+                <p>Usuários: <span>18</span></p>
+                <p>Células: <span>14</span></p>
+                <p>Vídeos: <span>7</span></p>
+            </div>
+            <div class="section">
+                <h2>Células ativas por Rede</h2>
+                <p>Homens: <span>1</span></p>
+                <p>Rapazes: <span>4</span></p>
+                <p>Moças: <span>9</span></p>
+            </div>
+            <div class="section">
+                <h2>Agenda do mês (Jun/2015)</h2>
+                <table>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Data do evento</th>
+                    </tr>
+                </table>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

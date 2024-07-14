@@ -1,34 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="oi">
-            <button id="red">Células</button>
+    <div class="container">
+        <header>
+            <div class="logo">Viscel</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Cadastros</a></li>
+                    <li><a href="#">Pagamentos</a></li>
+                    <li><a href="#">Top10</a></li>
+                    <li><a href="#">Ped. Oração</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <span class="church-name">Minha Igreja - IEO - IeqCastanhal Sede</span>
+                <span class="user-settings"><img src="user-icon.png" alt="User Icon"></span>
+            </div>
+        </header>
+        <div class="main-content">
+            <aside class="sidebar">
+                <button class="button red">Células</button>
+                <button class="button orange">Ped. Oração</button>
+                <button class="button blue">Meus dados</button>
+                <button class="button green">Usuários</button>
+                <button class="button teal">Config</button>
+                <button class="button grey">Agenda</button>
+            </aside>
+            <section class="content">
+                <div class="widgets">
+                    <div class="widget">
+                        <h2>Membros/Usuários (Ativos)</h2>
+                        <ul>
+                            <li>Administradores: 2</li>
+                            <li>Líderes: 14</li>
+                            <li>Supervisores: 10</li>
+                            <li>Coordenadores: 3</li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h2>Doações (Mês atual)</h2>
+                        <p>Doações realizadas: R$ 0,00</p>
+                        <p>Doações aguardando pagamento: R$ 0,00</p>
+                    </div>
+                    <div class="widget">
+                        <h2>Reuniões de Célula</h2>
+                        <p>Jan à Dez de 2015</p>
+                        <ul>
+                            <li>Visitantes não convertidos</li>
+                            <li>Conversões realizadas</li>
+                            <li>Reconciliações realizadas</li>
+                            <li>Batismos realizados</li>
+                            <li>Ofertas com propósito</li>
+                            <li>Trab. de Evangelização</li>
+                            <li>Ação Social</li>
+                            <li>Visita de Supervisão</li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h2>Cadastros (Ativos)</h2>
+                        <ul>
+                            <li>Usuários: 18</li>
+                            <li>Células: 14</li>
+                            <li>Vídeos: 7</li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h2>Células ativas por Rede</h2>
+                        <ul>
+                            <li>Homens: 1</li>
+                            <li>Rapazes: 4</li>
+                            <li>Moças: 9</li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h2>Agenda do mês (Jun/2015)</h2>
+                        <p>Evento: <span class="event-date">Data do evento</span></p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="oi">
-            <button id="">Ped. Oração</button>
-        </div>
-        <div class="oi">
-            <button id="">Meus dados</button>
-        </div>
-        <div>
-            <button >Usuários</button>
-        </div>
-        <div>
-            <button >Config</button>
-        </div>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    </div>
 </body>
 </html>
