@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99vw;
+            height: 93vh;
+            background-color: #053a00;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            font-size: 20px;
+            color: #ffffff;
+            height: 100%;
+            width: 100%;
+            background-color: #053a00;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .butons-container {
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            width: 150px;
+            
+        }
+
+        button {
+            height: 30px;
+            width: 50px;
+            background: white;
+            border-radius: 50px;
+            color: rgb(109, 0, 0);
+            font-weight: 600;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>vai me dar um bjinho?</p>
+        <div class="buttons-container">
+            <button>
+                <a href="https://www.youtube.com/shorts/tv8ka6LaFkg">sim</a>
+            </button>
+            <button id="no">não</button>
+        </div>
+    </div>
+</body>
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+    button.addEventListener('mouseover', function() {
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+</html>
